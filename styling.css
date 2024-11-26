@@ -474,6 +474,11 @@ main {
     text-decoration: underline;
 }
 
+.terms,
+.privacy {
+    width: 90vw;
+}
+
 /* Tablet */
 @media screen and (min-width:600px) {
     .navbar {
@@ -749,7 +754,7 @@ main {
     }
 
     .main p {
-        font-size: 1.1rem;
+        font-size: 0.97rem;
         animation: fadein 4s;
     }
 
@@ -1064,6 +1069,11 @@ main {
 
     .footer a:hover {
         text-decoration: underline;
+    }
+
+    .terms,
+    .privacy {
+        width: 50vw;
     }
 }
 
@@ -1603,5 +1613,10 @@ main {
 
     .footer a:hover {
         text-decoration: underline;
+    }
+
+    .terms,
+    .privacy {
+        width: 50vw;
     }
 }
