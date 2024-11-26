@@ -477,6 +477,7 @@ main {
 .terms,
 .privacy {
     width: 90vw;
+    font-size: 0.8rem;
 }
 
 /* Tablet */
