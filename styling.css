@@ -381,21 +381,11 @@ main {
     text-align: center;
 }
 
-.first {
-    position: relative;
-    width: 65vw;
-    height: 100%;
-    perspective: 1000px;
-}
-
-.second {
-    position: relative;
-    width: 65vw;
-    height: 100%;
-    perspective: 1000px;
-}
-
-.third {
+.first,
+.second,
+.third,
+.fourth,
+.fifth {
     position: relative;
     width: 65vw;
     height: 100%;
@@ -423,6 +413,14 @@ main {
     transform: rotateY(180deg);
 }
 
+.fourth:hover .inner {
+    transform: rotateY(180deg);
+}
+
+.fifth:hover .inner {
+    transform: rotateY(180deg);
+}
+
 .front,
 .back {
     position: absolute;
@@ -440,8 +438,8 @@ main {
     -webkit-backdrop-filter: blur(4px);
     border-radius: 10px;
     border: 1px solid rgba(255, 255, 255, 0.18);
-    font-size: 1.4rem;
-    padding-top: 20%;
+    font-size: 1.1rem;
+    padding-top: 8%;
 }
 
 .back {
@@ -453,8 +451,8 @@ main {
     border: 1px solid rgba(255, 255, 255, 0.18);
     color: white;
     transform: rotateY(180deg);
-    padding: 20px;
-    font-size: 0.65rem;
+    padding: 9px;
+    font-size: 0.56rem;
 }
 
 .footer {
@@ -477,7 +475,6 @@ main {
 .terms,
 .privacy {
     width: 90vw;
-    font-size: 0.8rem;
 }
 
 /* Tablet */
@@ -516,12 +513,12 @@ main {
     }
 
     .front {
-        padding-top: 9%;
-        font-size: 2rem;
+        padding-top: 5%;
+        font-size: 1.4rem;
     }
 
     .back {
-        font-size: 0.94rem;
+        font-size: 0.8rem;
     }
 
     .accordion-header {
@@ -534,7 +531,7 @@ main {
 }
 
 /* Desktop and PC */
-@media screen and (min-width:1200px) {
+@media screen and (min-width:1200px) and (max-width:1505px) {
     * {
         margin: 0;
         padding: 0;
@@ -969,7 +966,7 @@ main {
         position: absolute;
         display: flex;
         flex-direction: row;
-        gap: 8vw;
+        gap: 3vw;
         margin: 0px 7px;
         top: 50%;
         left: 50%;
@@ -979,25 +976,23 @@ main {
         text-align: center;
     }
 
-    .first {
+    .first,
+    .second,
+    .third,
+    .fourth,
+    .fifth {
         position: relative;
-        width: 25vw;
         height: 100%;
         perspective: 1000px;
     }
 
-    .second {
-        position: relative;
-        width: 25vw;
-        height: 100%;
-        perspective: 1000px;
+    .third .front,
+    .fourth .front {
+        font-size: 1.1rem;
     }
 
-    .third {
-        position: relative;
-        width: 25vw;
-        height: 100%;
-        perspective: 1000px;
+    .fifth .front {
+        font-size: 0.9rem;
     }
 
     .inner {
@@ -1021,14 +1016,19 @@ main {
         transform: rotateY(180deg);
     }
 
+    .fourth:hover .inner {
+        transform: rotateY(180deg);
+    }
+
+    .fifth:hover .inner {
+        transform: rotateY(180deg);
+    }
+
     .front,
     .back {
         position: absolute;
-        width: 100%;
-        height: 100%;
-        border-radius: 17px;
-        -webkit-backface-visibility: hidden;
-        backface-visibility: hidden;
+        width: 15vw;
+        height: 87%;
     }
 
     .front {
@@ -1038,8 +1038,8 @@ main {
         -webkit-backdrop-filter: blur(4px);
         border-radius: 10px;
         border: 1px solid rgba(255, 255, 255, 0.18);
-        font-size: 1.8rem;
-        padding-top: 37%;
+        font-size: 1.4rem;
+        padding-top: 50%;
     }
 
     .back {
@@ -1052,7 +1052,7 @@ main {
         color: white;
         transform: rotateY(180deg);
         padding: 20px;
-        font-size: 1.1rem;
+        font-size: 0.9rem;
     }
 
     .footer {
@@ -1513,7 +1513,7 @@ main {
         position: absolute;
         display: flex;
         flex-direction: row;
-        gap: 8vw;
+        gap: 3vw;
         margin: 0px 7px;
         top: 50%;
         left: 50%;
@@ -1523,25 +1523,23 @@ main {
         text-align: center;
     }
 
-    .first {
+    .first,
+    .second,
+    .third,
+    .fourth,
+    .fifth {
         position: relative;
-        width: 25vw;
         height: 100%;
         perspective: 1000px;
     }
 
-    .second {
-        position: relative;
-        width: 25vw;
-        height: 100%;
-        perspective: 1000px;
+    .third .front,
+    .fourth .front {
+        font-size: 1.2rem;
     }
 
-    .third {
-        position: relative;
-        width: 25vw;
-        height: 100%;
-        perspective: 1000px;
+    .fifth .front {
+        font-size: 1.1rem;
     }
 
     .inner {
@@ -1565,14 +1563,19 @@ main {
         transform: rotateY(180deg);
     }
 
+    .fourth:hover .inner {
+        transform: rotateY(180deg);
+    }
+
+    .fifth:hover .inner {
+        transform: rotateY(180deg);
+    }
+
     .front,
     .back {
         position: absolute;
-        width: 100%;
-        height: 100%;
-        border-radius: 17px;
-        -webkit-backface-visibility: hidden;
-        backface-visibility: hidden;
+        width: 15vw;
+        height: 92%;
     }
 
     .front {
@@ -1582,8 +1585,8 @@ main {
         -webkit-backdrop-filter: blur(4px);
         border-radius: 10px;
         border: 1px solid rgba(255, 255, 255, 0.18);
-        font-size: 2rem;
-        padding-top: 37%;
+        font-size: 1.4rem;
+        padding-top: 50%;
     }
 
     .back {
@@ -1596,7 +1599,7 @@ main {
         color: white;
         transform: rotateY(180deg);
         padding: 20px;
-        font-size: 1.1rem;
+        font-size: 1rem;
     }
 
     .footer {
